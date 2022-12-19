@@ -1,0 +1,31 @@
+{
+  "name": "wikiverse",
+  "version": "1.2.1",
+  "scripts": {
+    "test": "jest",
+    "client-dev": "parcel public/index.html --open",
+    "server-dev": "nodemon server.js",
+    "seed": "node server/seed.js",
+    "start": "parcel build public/index.html && node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "16.0.0",
+    "express": "^4.17.1",
+    "morgan": "1.10.0",
+    "nodemon": "^2.0.19",
+    "parcel": "^2.7.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sequelize": "^6.23.2",
+    "sqlite3": "^5.1.1"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-react": "^7.14.5",
+    "@testing-library/react": "^12.0.0",
+    "babel-jest": "^27.1.0",
+    "jest": "^27.1.0",
+    "react-test-renderer": "18.2.0"
+  }
+}
